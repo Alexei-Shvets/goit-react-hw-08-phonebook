@@ -43,17 +43,17 @@ function App() {
               <Route
                 path="/contacts/add"
                 element={
-                  <PrivateRoute>
+                  <PublicRoute>
                     <AddContactPage />
-                  </PrivateRoute>
+                  </PublicRoute>
                 }
                 />             
               <Route
                 path="/contacts/edit/:contactId"
                 element={
-                  <PrivateRoute>
+                  <PublicRoute>
                     <ChangeContactPage />
-                  </PrivateRoute>
+                  </PublicRoute>
                 }
               />
               
