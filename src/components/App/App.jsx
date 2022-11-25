@@ -39,26 +39,25 @@ function App() {
               <Route path="/" element={<PrivateRoute />}>
                 <Route path="/contacts" element={<ContactsPage />} />
               </Route>
-              <Route path="/" element={<PrivateRoute />}>
+              
               <Route
                 path="/contacts/add"
                 element={
-                  <PublicRoute>
+                  <PrivateRoute>
                     <AddContactPage />
-                  </PublicRoute>
+                  </PrivateRoute>
                 }
               />
-              </Route>
-              <Route path="/" element={<PrivateRoute />}>
+              
               <Route
                 path="/contacts/edit/:contactId"
                 element={
-                  <PublicRoute>
+                  <PrivateRoute>
                     <ChangeContactPage />
-                  </PublicRoute>
+                  </PrivateRoute>
                 }
                 />
-                </Route>
+                
               
 
                 
