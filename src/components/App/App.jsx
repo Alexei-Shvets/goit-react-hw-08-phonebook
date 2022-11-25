@@ -37,7 +37,7 @@ function App() {
 
 
               <Route path="/" element={<PrivateRoute />}>
-                <Route path="/contacts/" element={<ContactsPage />} />
+                <Route path="/contacts" element={<ContactsPage />} />
               </Route>
               
               <Route
