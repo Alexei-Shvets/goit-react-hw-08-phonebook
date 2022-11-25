@@ -39,7 +39,7 @@ function App() {
               <Route path="/" element={<PrivateRoute />}>
                 <Route path="/contacts" element={<ContactsPage />} />
               </Route>
-              
+              <Route path="/" element={<PrivateRoute />}>
               <Route
                 path="/contacts/add"
                 element={
@@ -47,7 +47,9 @@ function App() {
                     <AddContactPage />
                   </PublicRoute>
                 }
-                />             
+              />
+              </Route>
+              <Route path="/" element={<PrivateRoute />}>
               <Route
                 path="/contacts/edit/:contactId"
                 element={
@@ -55,7 +57,8 @@ function App() {
                     <ChangeContactPage />
                   </PublicRoute>
                 }
-              />
+                />
+                </Route>
               
 
                 
